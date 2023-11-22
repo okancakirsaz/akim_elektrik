@@ -3,14 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lora&family=Montserrat:wght@100;400;700&family=Open+Sans&display=swap');
 body{
     margin: 0;
+    padding: 0;
     --montserrat:'Montserrat', sans-serif;
     --shadow:#2c2c2c9a;
-    --primary:#2FCB77;
+    --primary:#5e5e5e;
     --activeBtn:red;
     font-weight: 400;
     font-family:var(--montserrat);
     overflow-x: hidden;
 }
 ::selection{
-    background-color: #34e185;
+    background-color: white;
 }

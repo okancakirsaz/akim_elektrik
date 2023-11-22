@@ -1,29 +1,7 @@
-const logo = new URL( "../../assets/logo.svg",import.meta.url).href;
-const recapu = new URL( "../../assets/recapu.png",import.meta.url).href;
-const ffimg1 = new URL( "../../assets/ffimg1.jpg",import.meta.url).href;
-const ffimg2 = new URL( "../../assets/ffimg2.jpg",import.meta.url).href;
-const uploadFile = new URL( "../../assets/upload_file.svg",import.meta.url).href;
-const nfc = new URL( "../../assets/nfc.svg",import.meta.url).href;
-const qr = new URL( "../../assets/qr.svg",import.meta.url).href;
-const text = new URL( "../../assets/text.svg",import.meta.url).href;
-const appStore = new URL( "../../assets/apple.svg",import.meta.url).href;
-const playStore = new URL( "../../assets/play_store.svg",import.meta.url).href;
-const mockupMain = new URL( "../../assets/mockup_main.jpg",import.meta.url).href;
-const mockupProfile = new URL( "../../assets/mockup_profile.jpg",import.meta.url).href;
-const menu = new URL( "../../assets/menu.svg",import.meta.url).href;
+const logo = new URL( "../../assets/logo.jpeg",import.meta.url).href;
+
 export class AssetConsts{
     public static instance : AssetConsts = new AssetConsts()
     public logo :string = logo;
-    public ffimg1:string=ffimg1;
-    public ffimg2:string=ffimg2
-    public mockupMain:string=mockupMain;
-    public mockupProfile:string=mockupProfile;
-    public recapu:string=recapu;
-    public menu:string=menu;
-    public uploadFile:string = uploadFile;
-    public text:string = text;
-    public nfc:string = nfc;
-    public qr:string = qr;
-    public appStore:string = appStore;
-    public playStore:string = playStore;
+
 }
