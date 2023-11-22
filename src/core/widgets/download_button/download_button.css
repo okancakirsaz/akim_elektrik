@@ -1,0 +1,51 @@
+@import url(../../../core/consts/style_consts.css);
+
+#storeName{
+    margin-left: 3px;
+}
+ @media only screen and (min-width: 765px){
+    .downloadButton{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        user-select: none;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        height: 40px;
+        font-weight: bold;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 500px;
+        font-family: var(--montserrat);
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    .downloadButton{
+        display: flex;
+        flex-direction: row;
+        user-select: none;
+        align-items: center;
+        padding: 10px;
+        user-select: none;
+        font-weight: bold;
+        width: fit-content;
+        height: 35px;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 500px;
+        font-family: var(--montserrat);
+        font-size: 14px;
+    }
+    #storeIcon{
+        width: 25px;
+    }
+}
+
+

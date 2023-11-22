@@ -1,0 +1,33 @@
+@import url(../../../core/consts/style_consts.css);
+
+    .customButton:active{
+        box-shadow:  1px 1px 3px 1px var(--shadow);
+    }
+
+ @media only screen and (min-width: 765px){
+    .customButton{
+        user-select: none;
+        width: 120px;
+        height: 40px;
+        border: none;
+        border-radius: 500px;
+        box-shadow: inset 1px 1px 3px 1px var(--shadow);
+        font-family: var(--montserrat);
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    .customButton{
+        user-select: none;
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 500px;
+        box-shadow: inset 1px 1px 3px 1px var(--shadow);
+        font-family: var(--montserrat);
+        font-size: 14px;
+    }
+}
+
+

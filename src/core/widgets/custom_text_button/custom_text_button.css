@@ -1,0 +1,32 @@
+@import url(../../../core/consts/style_consts.css);
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+#customTextButton:active{
+    color:var(--activeBtn);
+}
+#customTextButton{
+    font-size: 19px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor:pointer;
+    outline: none;
+    font-family: 'Manrope', sans-serif;
+}
+ @media only screen and (min-width: 1024px){
+#customTextButton{
+    font-size: 19px;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #customTextButton{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1024px){
+    #customTextButton{
+        font-size: 19px;
+    }
+}

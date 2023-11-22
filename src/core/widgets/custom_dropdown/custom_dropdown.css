@@ -1,0 +1,16 @@
+@import url(../../../core/consts/style_consts.css);
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lora&family=Montserrat:wght@100;400;700&family=Open+Sans&family=Righteous&display=swap');
+
+    .customDropDown,.customDropDown:active{
+        width: fit-content;
+        height: 35px;
+        outline: none;
+        font-family: "Righteous";
+        box-shadow: inset 1px 1px 3px 1px var(--shadow);
+        border: none;
+        border-radius: 5px;
+    }
+    
+
+
+

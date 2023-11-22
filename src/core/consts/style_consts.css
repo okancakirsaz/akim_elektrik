@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lora&family=Montserrat:wght@100&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lora&family=Montserrat:wght@100;400&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lora&family=Montserrat:wght@100;400;700&family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    --montserrat:'Montserrat', sans-serif;
+    --shadow:#2c2c2c9a;
+    --primary:#2FCB77;
+    --activeBtn:red;
+    font-weight: 400;
+    font-family:var(--montserrat);
+    overflow-x: hidden;
+}
+::selection{
+    background-color: #34e185;
+}
