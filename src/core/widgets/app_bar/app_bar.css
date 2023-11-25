@@ -1,17 +1,19 @@
 @import url(../../consts/style_consts.css);
 
 #appBar{
+    z-index: 50;
     height: 100px;
     background-color: var(--primary);
 }
 
-#appBar ul{
+#appBar ul, #backupAppBar ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
 }
+
 
 .appBarLink:visited,.appBarLink:link{
     margin-top: 20px;
@@ -44,9 +46,28 @@
 }
 #pop{
     display: none;;
+}  
+
+@media only screen and (min-width:765px){
+#backupAppBar{
+    width: 550px;
+    top: 0px;
+    display: none;
+    z-index: 50;
+    position: fixed;
+    background-color: #00000082;
+    backdrop-filter: blur(10px);
+    border-radius: 10px 0px 0px 10px;
 }
-
-
+@keyframes backupAppBarSlide {
+    0%{
+        left: 3000px;
+    }
+    100%{
+        left: calc(100% - 550px);
+    }
+}
+}
 
 @media only screen and (min-width: 320px) and (max-width:765px){
     .appBarLink:visited,.appBarLink:link{
@@ -54,7 +75,6 @@
     }
     #menu{
         display: flex;
-        color: white;
     }
     #appBar ul{
         display: flex;
@@ -63,6 +83,12 @@
         justify-content: space-between;
         list-style-type: none;
     }
+
+    #backupAppBar{
+        width: 0px;
+        top: 0px;
+    }
+
     #drawer{
         padding-top: 50px;
         flex-direction: column;
@@ -93,8 +119,16 @@
         margin-top: 100px;
         color: white;
        }
-    
+       @keyframes backupAppBarSlide {
+        0%{
+            left: 3000px;
+        }
+        100%{
+            left: calc(100% - 100px);
+        }
+    }
 }
+
 
 
 

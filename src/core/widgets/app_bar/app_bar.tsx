@@ -12,6 +12,7 @@ function AppBar(){
         viewModel.init();
         viewModel.openMenu();
         viewModel.closeMenu()
+        window.addEventListener('scroll', viewModel.onScroll);
     })
     return <>
     <nav id="appBar">
@@ -32,6 +33,17 @@ function AppBar(){
         <LinkElement path="" text="Acil Destek"/>
         <SvgIcon component={ArrowBackIos} id="pop"></SvgIcon>
     </div>
+    </nav>
+    <nav id="backupAppBar">
+        <ul>
+        <section id="actions">
+        <li><a className="appBarLink" href="">Ana Sayfa</a> </li>
+        <li><a className="appBarLink" href="">İletişim</a></li>
+        <li><a className="appBarLink" href="">Referanslar</a></li>
+        <li><a className="appBarLink" href="">Acil Destek</a></li>
+        <img  id="menu" src={AssetConsts.instance.menu} alt="menu" />
+        </section>
+        </ul>
     </nav>
     </>
 }

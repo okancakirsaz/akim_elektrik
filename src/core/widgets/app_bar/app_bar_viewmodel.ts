@@ -29,4 +29,18 @@ export class AppBarViewModel{
             link.style.display=status;
         }
     }
+    onScroll() {
+        const element = document.getElementById('appBar');
+        const rect = element!.getBoundingClientRect();
+        const backupAppBar = document.getElementById('backupAppBar')
+      
+        if (rect.bottom < 0) {
+            backupAppBar!.style.animation ="backupAppBarSlide 1s normal forwards"
+            backupAppBar!.style.display="flex";
+        } else {
+            backupAppBar!.style.display="none";
+        }
+      }
+      
+    
 } 

@@ -1,0 +1,190 @@
+@import url(../../../core/consts/style_consts.css);
+
+#aboutUs{
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#i1{
+    background-image: url(../../../assets/1.png);
+}
+#i2{
+    background-image: url(../../../assets/2.png);
+}
+#i3{
+    background-image: url(../../../assets/3.png);
+}
+#i4{
+    background-image: url(../../../assets/4.png);
+}
+
+.showroomContainer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 370px;
+    min-height: 370px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 2px var(--shadow);
+}
+
+.showroomDescription{
+    padding: 40px;
+    display: flex;
+    text-shadow: 2px 2px 4px var(--shadow);
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+
+.showroomContainer:hover{
+    position: relative;
+    animation: moveShowroom 1s normal forwards;
+}
+.showroomContainer:hover .showroomDescription{
+    display: flex;
+    animation: openShowroom 1s normal forwards;
+}
+
+.showroomTitle{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.351);
+    color: white;
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+ @media only screen and (min-width: 765px) and (max-width:1024px){
+    .showroomDescription{
+        padding: 40px;
+        display: flex;
+        text-shadow: 2px 2px 4px var(--shadow);
+        align-items: center;
+        border: 5px solid white;
+        border-radius: 5px;
+        color: white;
+        backdrop-filter: blur(10px);
+        font-size: 13px;
+        width: 140px;
+        height: 110px;
+    }
+    
+    .showroomContainer{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 280px;
+        min-height: 280px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: 2px 2px 6px 2px var(--shadow);
+    }
+    
+    #aboutUs{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .showroomContainer:hover{
+        animation: none;
+    }
+    .showroomContainer:hover .showroomDescription{
+        animation: none;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+.showroomDescription{
+    padding: 40px;
+    display: flex;
+    text-shadow: 2px 2px 4px var(--shadow);
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 5px;
+    color: white;
+    backdrop-filter: blur(10px);
+    font-size: 13px;
+    width: 140px;
+    height: 110px;
+}
+
+.showroomContainer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 280px;
+    min-height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 2px var(--shadow);
+}
+
+#aboutUs{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.showroomContainer:hover{
+    animation: none;
+}
+.showroomContainer:hover .showroomDescription{
+    animation: none;
+}
+}
+
+@keyframes moveShowroom {
+    0%{
+        top: 0px;
+        }
+    100%{
+            top: 20px;
+        } 
+}
+
+@keyframes openShowroom {
+    0%{
+    backdrop-filter: blur(0px);
+    width:0px;
+    height:0px;
+    font-size:0px;
+    }
+    100%{
+    backdrop-filter: blur(10px);
+    font-size: 16px;
+    width: 210px;
+    height: 210px;
+    }
+}
