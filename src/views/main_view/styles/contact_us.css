@@ -1,0 +1,91 @@
+#contactUsInMain{
+    margin-top: 100px;
+    width: 900px;
+    height: 680px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primary);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px var(--shadow);
+}
+#inputs{
+    width: 270px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactUsTitle{
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#buttonArea{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sizedBox{
+    height: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #contactUsInMain{
+        margin-top: 100px;
+        width: 90%;
+        height: 500px;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--primary);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px 2px var(--shadow);
+    }
+    #inputs{
+        width: 220px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #contactUsTitle{
+        color: white;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #buttonArea{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width:1024px){
+    #contactUsInMain{
+        margin-top: 100px;
+        width: 90%;
+        height: 600px;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--primary);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px 2px var(--shadow);
+    }
+}

@@ -5,9 +5,9 @@ import "./bottom_bar.css";
 function BottomBar(){
     const [] = useState();
     return <>
-    <div id="bottomBar">
-       <img src={AssetConsts.instance.recapu} alt="Recapu Logo" id="recapuLogo" />
-    </div>
+    <footer id="bottomBar">
+       <img src={AssetConsts.instance.logo} alt="Recapu Logo" id="bottomLogo" />
+    </footer>
     </>
 }
 
