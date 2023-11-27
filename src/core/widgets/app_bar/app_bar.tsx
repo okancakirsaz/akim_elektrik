@@ -19,9 +19,10 @@ function AppBar(){
         <ul>
         <img src={AssetConsts.instance.logo} alt="logo" id="logo"/>
         <section id="actions">
-        <li><a className="appBarLink" href="">Ana Sayfa</a> </li>
+        <li><a className="appBarLink" href="/">Ana Sayfa</a> </li>
         <li><a className="appBarLink" href="">İletişim</a></li>
         <li><a className="appBarLink" href="">Referanslar</a></li>
+        <li><a className="appBarLink" href="/hakkimizda">Hakkımızda</a></li>
         <li><a className="appBarLink" href="">Acil Destek</a></li>
         <img  id="menu" src={AssetConsts.instance.menu} alt="menu" />
         </section>
@@ -30,6 +31,7 @@ function AppBar(){
         <LinkElement path="" text="Ana Sayfa"/>
         <LinkElement path="" text="İletişim"/>
         <LinkElement path="" text="Referanslar"/>
+        <LinkElement path="hakkimizda" text="Hakkımızda"/>
         <LinkElement path="" text="Acil Destek"/>
         <SvgIcon component={ArrowBackIos} id="pop"></SvgIcon>
     </div>
@@ -37,9 +39,10 @@ function AppBar(){
     <nav id="backupAppBar">
         <ul>
         <section id="actions">
-        <li><a className="appBarLink" href="">Ana Sayfa</a> </li>
+        <li><a className="appBarLink" href="/">Ana Sayfa</a> </li>
         <li><a className="appBarLink" href="">İletişim</a></li>
         <li><a className="appBarLink" href="">Referanslar</a></li>
+        <li><a className="appBarLink" href="/hakkimizda">Hakkımızda</a></li>
         <li><a className="appBarLink" href="">Acil Destek</a></li>
         <img  id="menu" src={AssetConsts.instance.menu} alt="menu" />
         </section>

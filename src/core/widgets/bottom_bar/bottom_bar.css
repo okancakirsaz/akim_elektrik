@@ -7,11 +7,27 @@
     background-color: var(--primary);
     display: flex;
     border-radius: 87% 13% 100% 0% / 22% 100% 0% 78%;
-    justify-content: center;
     align-items: center;
 }
 #bottomLogo{
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
     width: 100px;
 }
 
+#bottomList{
+    color: white;
+    font-weight:600;
+}
+
+.bottomListElement{
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-weight: normal;
+}
+
+.bottomListElement:hover{
+    text-decoration: none;
+}

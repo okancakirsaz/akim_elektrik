@@ -23,7 +23,7 @@
 }
 
 #actions{
-    width: 500px;
+    width: 600px;
     float: right;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@
 
 @media only screen and (min-width:765px){
 #backupAppBar{
-    width: 550px;
+    width: 650px;
     top: 0px;
     display: none;
     z-index: 50;
@@ -64,7 +64,7 @@
         left: 3000px;
     }
     100%{
-        left: calc(100% - 550px);
+        left: calc(100% - 650px);
     }
 }
 }
