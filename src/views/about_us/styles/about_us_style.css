@@ -17,3 +17,26 @@
     backdrop-filter: blur(15px);
     box-shadow: 2px 2px 5px 2px var(--shadow);
 }
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #aboutUsMain{
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        padding-top: 10px;
+        width: calc(100% - 50px);
+        overflow: hidden;
+        font-size: 14px;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: #3e3e3e8e;
+        backdrop-filter: blur(15px);
+        box-shadow: 2px 2px 5px 2px var(--shadow);
+    }
+}
