@@ -31,3 +31,18 @@
 .bottomListElement:hover{
     text-decoration: none;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width:1024px){
+    #bottomLogo{
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 75px;
+    }
+    #bottomList{
+        color: white;
+        font-size: 14px;
+        font-weight:600;
+    }
+}

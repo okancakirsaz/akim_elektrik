@@ -7,12 +7,12 @@ function BottomBar(){
     return <>
     <footer id="bottomBar">
         <ul id="bottomList">
-            Akım Elektrik Kütahya
+            Akım Elektrik/Kütahya
             <li>
                 <a href="" className="bottomListElement">Gizlilik Politikası</a>
             </li>
         </ul>
-       <img src={AssetConsts.instance.logo} alt="Recapu Logo" id="bottomLogo" />
+       <img src={AssetConsts.instance.logo} alt="logo" id="bottomLogo" />
     </footer>
     </>
 }
