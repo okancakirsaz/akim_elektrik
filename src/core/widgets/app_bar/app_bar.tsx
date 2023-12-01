@@ -21,7 +21,7 @@ function AppBar(){
         <section id="actions">
         <li><a className="appBarLink" href="/">Ana Sayfa</a> </li>
         <li><a className="appBarLink" href="/iletisim">İletişim</a></li>
-        <li><a className="appBarLink" href="">Referanslar</a></li>
+        <li><a className="appBarLink" href="/referanslar">Referanslar</a></li>
         <li><a className="appBarLink" href="/hakkimizda">Hakkımızda</a></li>
         <li><a className="appBarLink" href="/servis-cagir">Acil Destek</a></li>
         <img  id="menu" src={AssetConsts.instance.menu} alt="menu" />
@@ -30,9 +30,9 @@ function AppBar(){
         <div id="drawer">
         <LinkElement path="" text="Ana Sayfa"/>
         <LinkElement path="iletisim" text="İletişim"/>
-        <LinkElement path="" text="Referanslar"/>
+        <LinkElement path="referanslar" text="Referanslar"/>
         <LinkElement path="hakkimizda" text="Hakkımızda"/>
-        <LinkElement path="/servis-cagir" text="Acil Destek"/>
+        <LinkElement path="servis-cagir" text="Acil Destek"/>
         <SvgIcon component={ArrowBackIos} id="pop"></SvgIcon>
     </div>
     </nav>
@@ -41,7 +41,7 @@ function AppBar(){
         <section id="actions">
         <li><a className="appBarLink" href="/">Ana Sayfa</a> </li>
         <li><a className="appBarLink" href="/iletisim">İletişim</a></li>
-        <li><a className="appBarLink" href="">Referanslar</a></li>
+        <li><a className="appBarLink" href="/referanslar">Referanslar</a></li>
         <li><a className="appBarLink" href="/hakkimizda">Hakkımızda</a></li>
         <li><a className="appBarLink" href="/servis-cagir">Acil Destek</a></li>
         <img  id="menu" src={AssetConsts.instance.menu} alt="menu" />

@@ -33,7 +33,7 @@
     .textInput,.textInput:active{
         min-width: 50px;
         width: inherit;
-        height: 45px;
+        height: 40px;
         outline: none;
         border:none;
         font-family: var(--montserrat);
