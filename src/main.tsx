@@ -7,6 +7,7 @@ import ContactUsView from './views/contact_us/view/contact_us_view';
 import CallServiceView from './views/call_service/view/call_service_view';
 import PanelLoginView from './views/admin/panel_login/view/panel_login_view';
 import ReferencesView from './views/references/view/references_view';
+import ReferenceView from './views/reference/view/reference_view';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Route path='/servis-cagir' index  element={<CallServiceView/>}/>
     <Route path='/panel' index  element={<PanelLoginView/>}/>
     <Route path='/referanslar' index  element={<ReferencesView/>}/>
+    <Route path='/referans' index  element={<ReferenceView/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
