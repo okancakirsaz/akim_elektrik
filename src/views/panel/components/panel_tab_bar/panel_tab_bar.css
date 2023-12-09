@@ -1,0 +1,74 @@
+#adminNavBar{
+    display: flex;
+    background-color: #3e3e3396;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#panelNavBarTitle{
+margin-right: 20px;
+color: white;
+font-weight: bold;
+font-size: 16px;
+}
+
+.adminNavBarLink{
+    color: black;
+    text-decoration: none;
+    height: 40px;
+    width: fit-content;
+    background-color: #f4f4f4a2;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    backdrop-filter: blur(15px);
+}
+
+.adminNavBarLink:hover{
+    color: white;
+    background-color: #3e3e3396;
+    backdrop-filter: blur(15px);
+}
+
+@media only screen and (min-width: 320px) and (max-width:765px){
+    #adminNavBar{
+        display: flex;
+        background-color: #3e3e3396;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    #panelNavBarTitle{
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    }
+    
+    .adminNavBarLink{
+        color: black;
+        text-decoration: none;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+        width: fit-content;
+        background-color: #f4f4f4a2;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        margin: 3px;
+        backdrop-filter: blur(15px);
+    }
+    
+    .adminNavBarLink:hover{
+        color: white;
+        background-color: #3e3e3396;
+        backdrop-filter: blur(15px);
+    }
+}
