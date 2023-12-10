@@ -12,6 +12,7 @@ import PanelReferencesView from './views/panel/panel_references/view/panel_refer
 import PanelSettingsView from './views/panel/panel_settings/view/panel_settings_view';
 import PanelMessagesView from './views/panel/panel_messages/view/panel_messages_view';
 import PanelSupportView from './views/panel/panel_support/view/panel_support_view';
+import AddReference from './views/panel/panel_references/view/components/add_reference/add_reference';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Route path='/referanslar' index  element={<ReferencesView/>}/>
     <Route path='/referans' index  element={<ReferenceView/>}/>
     <Route path='/admin-references' index  element={<PanelReferencesView/>}/>
+    <Route path='/admin-references/add-or-edit' index  element={<AddReference/>}/>
     <Route path='/admin-settings' index  element={<PanelSettingsView/>}/>
     <Route path='/admin-messages' index  element={<PanelMessagesView/>}/>
     <Route path='/admin-support' index  element={<PanelSupportView/>}/>

@@ -6,6 +6,7 @@ const i2 = new URL( "../../assets/2.png",import.meta.url).href;
 const i3 = new URL( "../../assets/3.png",import.meta.url).href;
 const i4 = new URL( "../../assets/4.png",import.meta.url).href;
 const board = new URL( "../../assets/board.jpeg",import.meta.url).href;
+const remove = new URL( "../../assets/delete.svg",import.meta.url).href;
 
 export class AssetConsts{
     public static instance : AssetConsts = new AssetConsts()
@@ -17,5 +18,6 @@ export class AssetConsts{
     public i4 :string = i4;
     public board :string = board;
     public phone :string = phone;
+    public remove :string = remove;
 
 }

@@ -14,5 +14,12 @@
     text-decoration: underline;
 }
 #allRefences{
-    margin:20px;
+    margin-top: 20px;
+    justify-content: center;
+    width: calc(100%-10px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 320px));
+    grid-gap: 15px; 
+    margin-left: 5px;
+    margin-right: 5px;
 }
