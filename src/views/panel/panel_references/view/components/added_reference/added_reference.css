@@ -1,0 +1,14 @@
+.addedReference{
+    margin: 3px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#deleteRef{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

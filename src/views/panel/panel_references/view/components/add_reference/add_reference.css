@@ -43,21 +43,6 @@
     margin-right: 30px;
 }
 
-.addedReference{
-    margin: 3px;
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#deleteRef{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
 @media only screen and (min-width: 320px) and (max-width:765px){
     #addReferenceContainer{
         width: 90%;
