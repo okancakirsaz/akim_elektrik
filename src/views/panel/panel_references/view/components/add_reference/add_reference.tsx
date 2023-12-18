@@ -15,7 +15,6 @@ function AddReference(){
         <CustomButton text="Ekle" onClick={()=>viewModel.addReference()} />
         <div style={{height:"10px"}}></div>
         <div id="addedReferences">
-            {viewModel.addedReferencesAsJsx}
         </div>
         <div className="sizedBox"></div>
         </div>
@@ -31,7 +30,7 @@ function AddReference(){
             <img id="addedImageInRefs" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Your_photo_here.jpg" alt="added_reference_image"/>
         </div>
         <div className="sizedBox"></div>
-        <div style={{width:"250px", display:"flex",justifyContent:"center"}}><CustomButton text="Onayla" onClick={()=>{}} /></div>
+        <div style={{width:"250px", display:"flex",justifyContent:"center"}}><CustomButton text="Onayla" onClick={async()=>viewModel.saveReference()} /></div>
         <div className="sizedBox"></div>
         </div>
     </section>
