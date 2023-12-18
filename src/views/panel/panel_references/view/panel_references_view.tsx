@@ -1,11 +1,14 @@
 import PanelTabBar from "../../components/panel_tab_bar/panel_tab_bar";
 import ReferenceElement from "./components/reference_element/reference_element";
 import "../styles/panel_references_style.css";
+import { PanelReferencesViewModel } from "../viewmodel/panel_references_viewmodel";
+import { Link } from "react-router-dom";
 
 function PanelReferencesView(){
+    const viewModel:PanelReferencesViewModel= PanelReferencesViewModel.instance;
     return <>
     <PanelTabBar />
-    <div className="addReference"><a href="/admin-references/add-or-edit" className="addReference">Yeni Referans Ekle</a></div>
+    <div className="addReference"><Link className="addReference" to={"/admin-references/add-or-edit"}>Yeni Referans Ekle</Link></div>
     <div id="allRefences">
     <ReferenceElement 
     title="example title" 
