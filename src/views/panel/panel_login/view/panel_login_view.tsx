@@ -7,7 +7,7 @@ function PanelLoginView(){
     return <>
     <div id="panelLoginContainer">
        <div id="panelLoginInputs">
-       <TextInput controllerId="panelUserName" type="text" title="Kullanıcı Adı"/>
+       <TextInput controllerId="panelUserName" type="text" title="E-Posta"/>
        <div style={{height:10}}></div>
         <TextInput controllerId="panelPassword" type="password" title="Şifre"/>
         <div style={{height:10}}></div>

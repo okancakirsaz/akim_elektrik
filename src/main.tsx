@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutUsView from './views/about_us/view/about_us_view';
 import ContactUsView from './views/contact_us/view/contact_us_view';
 import CallServiceView from './views/call_service/view/call_service_view';
-import PanelLoginView from './views/admin/panel_login/view/panel_login_view';
+import PanelLoginView from './views/panel/panel_login/view/panel_login_view';
 import ReferencesView from './views/references/view/references_view';
 import ReferenceView from './views/reference/view/reference_view';
 import PanelReferencesView from './views/panel/panel_references/view/panel_references_view';

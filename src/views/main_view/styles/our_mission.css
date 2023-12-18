@@ -14,11 +14,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: liveShape 7s ease-in infinite;
+    animation: liveShape 5s ease-in forwards;
     background-color: #3e3e3e8e;
     backdrop-filter: blur(15px);
     box-shadow: 2px 2px 5px 2px var(--shadow);
-    height: 650px;
+    height: 550px;
 }
 #textArea{
     margin-top: 70px;
@@ -33,26 +33,34 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width:765px){
+    #ourMission{
+        width: 100%;
+        height: 600px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
     #ourMissionText{
+        background-color: red;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
         width: 315px;
-        max-height: 510px;
+        max-height: 450px;
+        min-height: 350px;
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        animation: liveShape 7s ease-in infinite;
+        justify-content: flex-start;
+        animation: liveShape 5s ease-in forwards;
         background-color: #3e3e3e8e;
         backdrop-filter: blur(15px);
         box-shadow: 2px 2px 5px 2px var(--shadow);
-        height: 650px;
     }
     #textArea{
         margin: 25px;
-        font-size: 12px;
-        width: 220px;
+        font-size: 14px;
+        width: 250px;
         max-height: 160px;
         color: white;
     }
@@ -64,6 +72,7 @@
 }
 
 @media only screen and (min-width: 765px) and (max-width:1024px){
+   
     #ourMissionText{
         margin-left: auto;
         margin-right: auto;
@@ -74,7 +83,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        animation: liveShape 7s ease-in infinite;
+        animation: liveShape 5s ease-in forwards;
         background-color: #3e3e3e8e;
         backdrop-filter: blur(15px);
         box-shadow: 2px 2px 5px 2px var(--shadow);
@@ -99,10 +108,8 @@
     0%{
         border-radius: 69% 31% 61% 39% / 41% 55% 45% 59%  ;
     }
-    50%{
-        border-radius: 35% 65% 51% 44% / 64% 55% 45% 36%;
-    }
+
     100%{
-        border-radius: 69% 31% 61% 39% / 41% 55% 45% 59% ;
+        border-radius: 20px;
     }
 }

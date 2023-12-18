@@ -18,7 +18,7 @@ function CallServiceView(){
     <div className="contactInfoContent">Example Phone Number</div>
     </div>
     <div className="callServiceText">veya</div>
-    <div id="inputs">
+    <div id="inputsCallService">
             <TextInput title="Adınız-Soyadınız" controllerId="nameInput" type="text"/>
             <div className="sizedBox"></div>
             <TextInput title="Telefon Numaranız" controllerId="phoneNumberInput" type="number"/>

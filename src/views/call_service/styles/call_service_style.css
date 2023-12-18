@@ -16,6 +16,16 @@
     font-size: 20px;
 }
 
+#inputsCallService{
+    width: 220px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (min-width: 320px) and (max-width:1024px){
     #callServiceMain{
         background-color: #3e3e3e8e;
