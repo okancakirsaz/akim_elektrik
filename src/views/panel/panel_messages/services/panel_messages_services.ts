@@ -18,7 +18,11 @@ export class PanelMessagesServices{
           console.log("You have an error in get messages\nThis is your error: ",error);
         }
       }
-      async deleteMessage(messageName:string){ 
-        await deleteDoc(doc(collection(this.network.firestore,"PANEL_USERS"),messageName));
+      async deleteMessage(data:string){ 
+       try {
+        await deleteDoc(doc(collection(this.network.firestore,"MESSAGES"),data));
+       } catch (error) {
+        console.log("You have an error in delete message\nThis is your error: ",error);
+       }
       }
 }

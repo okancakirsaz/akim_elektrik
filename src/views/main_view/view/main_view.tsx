@@ -5,6 +5,7 @@ import TextInput from '../../../core/widgets/text_input/text_input';
 import TextAreaInput from '../../../core/widgets/text_area_input/text_area_input';
 import CustomButton from '../../../core/widgets/custom_button/custom_button';
 import BottomBar from "../../../core/widgets/bottom_bar/bottom_bar";
+import { ContactUsViewModel } from "../../contact_us/viewmodel/contact_us_viewmodel";
 
 function MainView(){
     return <>
@@ -65,7 +66,7 @@ function MainView(){
             <div className="sizedBox"></div>
             <TextAreaInput title="Size Nasıl Yardımcı Olabiliriz?" controllerId="descriptionInput"/>
             <div className="sizedBox"></div>
-            <div id="buttonArea"><CustomButton text="Gönder" onClick={()=>{}}/></div>
+            <div id="buttonArea"><CustomButton text="Gönder" onClick={async()=>new ContactUsViewModel().sendMessage()}/></div>
         </div>
     </section>
 
