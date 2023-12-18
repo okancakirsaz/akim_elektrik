@@ -6,9 +6,11 @@ import { AssetConsts } from "../../../core/consts/asset_consts";
 import TextInput from "../../../core/widgets/text_input/text_input";
 import TextAreaInput from "../../../core/widgets/text_area_input/text_area_input";
 import CustomButton from "../../../core/widgets/custom_button/custom_button";
+import { CallServiceViewModel } from "../viewmodel/call_service_viewmodel";
 
 
 function CallServiceView(){
+    const viewModel:CallServiceViewModel = new CallServiceViewModel()
     return <>
     <AppBar/>
     <section id="callServiceMain">
@@ -27,7 +29,7 @@ function CallServiceView(){
             <div className="sizedBox"></div>
             <TextAreaInput title="Sorununuzu kısaca özetler misiniz?" controllerId="problemInput"/>
             <div className="sizedBox"></div>
-            <div id="buttonArea"><CustomButton text="Gönder" onClick={()=>{}}/></div>
+            <div id="buttonArea"><CustomButton text="Gönder" onClick={async()=>await viewModel.sendMessage()}/></div>
         </div>
         <div className="sizedBox"></div>
         <div className="callServiceText">Formu doldurarak acil teknik destek talebinde bulunabilirsiniz.</div>
