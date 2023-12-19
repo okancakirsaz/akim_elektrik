@@ -7,7 +7,6 @@ import ContactUsView from './views/contact_us/view/contact_us_view';
 import CallServiceView from './views/call_service/view/call_service_view';
 import PanelLoginView from './views/panel/panel_login/view/panel_login_view';
 import ReferencesView from './views/references/view/references_view';
-import ReferenceView from './views/reference/view/reference_view';
 import PanelReferencesView from './views/panel/panel_references/view/panel_references_view';
 import PanelSettingsView from './views/panel/panel_settings/view/panel_settings_view';
 import PanelMessagesView from './views/panel/panel_messages/view/panel_messages_view';
@@ -25,7 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Route path='/servis-cagir' index  element={<CallServiceView/>}/>
     <Route path='/panel' index  element={<PanelLoginView/>}/>
     <Route path='/referanslar' index  element={<ReferencesView/>}/>
-    <Route path='/referans' index  element={<ReferenceView/>}/>
     <Route path='/admin-references' index  element={<PanelReferencesView/>}/>
     <Route path='/admin-references/add-or-edit' index  element={<AddReference/>}/>
     <Route path='/admin-settings' index  element={<PanelSettingsView/>}/>
