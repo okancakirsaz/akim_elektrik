@@ -7,17 +7,28 @@ import TextInput from "../../../core/widgets/text_input/text_input";
 import TextAreaInput from "../../../core/widgets/text_area_input/text_area_input";
 import CustomButton from "../../../core/widgets/custom_button/custom_button";
 import { CallServiceViewModel } from "../viewmodel/call_service_viewmodel";
+import { useEffect, useState } from "react";
+import { ContactUsViewModel } from "../../contact_us/viewmodel/contact_us_viewmodel";
 
 
 function CallServiceView(){
-    const viewModel:CallServiceViewModel = new CallServiceViewModel()
+    const viewModel:CallServiceViewModel = new CallServiceViewModel();
+    const [number,setNumber] = useState("Yükleniyor...");
+
+    useEffect(() => {
+      const asyncGap = async () => {
+        //ALERT: Dependency Injection
+        setNumber(await new ContactUsViewModel().setPhoneNumber());
+      };
+      asyncGap();
+    });
     return <>
     <AppBar/>
     <section id="callServiceMain">
     <div className="callServiceText">Bizi arayabilir</div>
     <div className="contactInfo">
     <img className="contactInfoIcon" src={AssetConsts.instance.phone}/>
-    <div className="contactInfoContent">Example Phone Number</div>
+    <div className="contactInfoContent">{number}</div>
     </div>
     <div className="callServiceText">veya</div>
     <div id="inputsCallService">

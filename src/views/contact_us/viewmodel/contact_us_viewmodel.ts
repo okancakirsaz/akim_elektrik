@@ -1,4 +1,6 @@
 import { ContactUsService } from "../service/contact_us_service";
+import { PanelSettingsServices } from '../../panel/panel_settings/services/panel_settings_services';
+import { LocalStorageEnums } from "../../../core/enums/local_storage_enums";
 
 export class ContactUsViewModel {
   service: ContactUsService = new ContactUsService();
@@ -45,5 +47,21 @@ export class ContactUsViewModel {
     phoneNumber.value = "";
     adress.value = "";
     problem.value = "";
+  }
+
+  async setPhoneNumber():Promise<string>{
+    const cachedData = sessionStorage.getItem(LocalStorageEnums.settings.toString());
+
+    if(cachedData==null){
+    //ALERT: Dependency Injection
+    const response =await new PanelSettingsServices().getSettings();
+    return response![0]["phone_number"];
+    }
+
+    else{
+      const parsedData = JSON.parse(cachedData);
+      return parsedData![0]["phone_number"];
+    }
+
   }
 }

@@ -12,6 +12,7 @@ import PanelSettingsView from './views/panel/panel_settings/view/panel_settings_
 import PanelMessagesView from './views/panel/panel_messages/view/panel_messages_view';
 import PanelSupportView from './views/panel/panel_support/view/panel_support_view';
 import AddReference from './views/panel/panel_references/view/components/add_reference/add_reference';
+import PanelMiddleware from './views/panel/components/panel_middleware';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Route path='/iletisim' index  element={<ContactUsView/>}/>
     <Route path='/servis-cagir' index  element={<CallServiceView/>}/>
     <Route path='/panel' index  element={<PanelLoginView/>}/>
+    <Route path='/panelmw' index  element={<PanelMiddleware/>}/>
     <Route path='/referanslar' index  element={<ReferencesView/>}/>
     <Route path='/admin-references' index  element={<PanelReferencesView/>}/>
     <Route path='/admin-references/add-or-edit' index  element={<AddReference/>}/>
